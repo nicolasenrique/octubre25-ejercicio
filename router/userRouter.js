@@ -6,6 +6,12 @@ var userController = require('../controller/userController');
 
 router.get('/', userController.index);
 
+
+router.put('/user/:email', userController.update);
+router.get('/register', userController.register);
+
+router.post('/register', userController.create);
+
 // router.post('/register', userController.create);
 // router.get('/list', userController.list);
 
